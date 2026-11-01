@@ -163,6 +163,15 @@ li {
   object-fit: cover;
 }
 
+.recipe-photo {
+  display: block;
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  margin: var(--space-3) auto;
+  border-radius: 12px;
+}
+
 #skills {
   border-left: 4px solid var(--color-blue);
 }
