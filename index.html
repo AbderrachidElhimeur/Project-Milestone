@@ -1,30 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Portfolio</title>
-    </head>
-    <body>
-        <nav>
-            <a href="index.html">Home</a>
-            <br>
-            <a href="project.html">Projects</a>
-            <br>
-            <a href="about.html">About</a>
-        </nav>
-        <h1>Abderrachid Elhimeur</h1>
-        <h2>Welcome to my portfolio!</h2>
-        <p>
-            Welcome to my portfolio! This website showcases my projects, skills,<br>
-             and the work I have completed while learning and developing my abilities. <br>
-             You can explore my projects, learn more about me, and find ways to contact me.
-        </p>
-        <h2>Featured Projects:</h2>
-        <ul>
-            <li><a href="project.html">Lionel Messi Tribute Page </a></li>
-            <li><a href="project.html">Personal Recipe Page </a></li>
-        </ul>    
-        <h3>Skills  /  Interests  </h3>
-        HTML, Soccer, biking, and Technology
-        
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abderrachid Elhimeur's personal portfolio and web development projects.">
+  <title>Home | Abderrachid Elhimeur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <p class="site-name">Abderrachid Elhimeur</p>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="project.html">Projects</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="card">
+      <h1>Abderrachid Elhimeur</h1>
+      <h2>Welcome to my portfolio!</h2>
+      <p>Welcome to my portfolio! This website showcases my projects, skills, and the work I have completed while learning and developing my abilities. You can explore my projects, learn more about me, and find ways to contact me.</p>
+    </section>
+    <section class="card">
+      <h2>Featured Projects</h2>
+      <div class="card-grid">
+        <article>
+          <h3>Lionel Messi Tribute Page</h3>
+          <p>Explore a page about Lionel Messi's career and achievements.</p>
+          <a class="button-link" href="index1.html">View Messi tribute</a>
+        </article>
+        <article>
+          <h3>Personal Favorite Recipe</h3>
+          <p>This project is part of my portfolio plan.</p>
+        </article>
+      </div>
+    </section>
+    <section class="card" id="skills">
+      <h2>Skills / Interests</h2>
+      <p>HTML, soccer, biking, and technology.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>Thanks for visiting my portfolio!</p>
+  </footer>
+</body>
 </html>
