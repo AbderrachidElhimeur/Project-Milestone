@@ -241,3 +241,30 @@ li {
     padding: 24px 12px;
   }
 }
+
+/* Accessibility: allow keyboard users to skip repetitive navigation. */
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -100px;
+  z-index: 1000;
+  background: var(--color-white);
+  color: var(--color-navy);
+  padding: 12px 16px;
+  border: 2px solid var(--color-navy);
+  border-radius: 6px;
+}
+.skip-link:focus {
+  top: 12px;
+}
+
+/* Accessibility: a visible indicator for keyboard focus. */
+a:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 3px;
+}
+.nav-links a[aria-current="page"] {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
