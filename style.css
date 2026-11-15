@@ -31,7 +31,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: var(--color-text);
-  background: white;
+  background: green;
 }
 
 img {
