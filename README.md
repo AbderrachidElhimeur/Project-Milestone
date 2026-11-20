@@ -83,3 +83,5 @@ All color combinations I tested passed WCAG AA standards. Normal text needs at l
 I ran WAVE on all three pages and checked the color contrast using WebAIM to make sure my website meets WCAG AA standards.
 
 ![WAVE Accessibility Results](No%20error%20on%20Wave%201.png)
+
+![WAVE Accessibility Results](No%20error%20on%20Wave%202.png)
