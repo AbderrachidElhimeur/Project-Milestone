@@ -19,8 +19,6 @@ the form and added error messages for missing or incorrect information. The form
 4 Testing
 
 I used WAVE to identify accessibility issues and made changes to fix them. I also adjusted the colors to improve contrast. 
-I still need to test all three pages again with WAVE and check the final contrast using WebAIM.
-
 
 
 ## Color Contrast Testing
@@ -79,3 +77,7 @@ Form help text
 7.57:1
 
 All color combinations I tested passed WCAG AA standards. Normal text needs at least a 4.5:1 contrast ratio, and all my results were above that requirement.
+
+##Final testing : 
+
+I ran WAVE on all three pages and checked the color contrast using WebAIM to make sure my website meets WCAG AA standards.
