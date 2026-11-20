@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +28,6 @@
       <p>Hello! My name is Abderrachid Elhimeur. I am learning HTML and building websites to improve my coding skills. I enjoy soccer, biking, and technology. This portfolio shows some of the projects I am working on.</p>
     </section>
     <section class="card">
-       <input type="text" placeholder="Your name">
       <h2>My Goals</h2>
       <ul>
         <li>Improve my HTML and CSS skills</li>
@@ -38,7 +37,30 @@
     </section>
     <section class="card">
       <h2>Contact Me</h2>
-      <p>You can reach me via email at <a href="mailto:aelhimeur@my.campus.edu">aelhimeur@my.campus.edu</a>.</p>
+      <p>You can reach me via email at <a href="mailto:aelhimeur@my.campus.edu">aelhimeur@my.campus.edu</a>, or use the form below to prepare an email in your email app.</p>
+      <form id="contact-form" novalidate>
+        <fieldset>
+          <legend>Your contact details</legend>
+          <div class="form-field">
+            <label for="contact-name">Your name <span aria-hidden="true">*</span></label>
+            <input id="contact-name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+            <p id="name-error" class="form-error" aria-live="polite"></p>
+          </div>
+          <div class="form-field">
+            <label for="contact-email">Email address <span aria-hidden="true">*</span></label>
+            <input id="contact-email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+            <p id="email-error" class="form-error" aria-live="polite"></p>
+          </div>
+        </fieldset>
+        <div class="form-field">
+          <label for="contact-message">Message <span aria-hidden="true">*</span></label>
+          <textarea id="contact-message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+          <p id="message-error" class="form-error" aria-live="polite"></p>
+        </div>
+        <p class="form-hint">All fields are required. Submitting opens your email application; the website does not store or send messages directly.</p>
+        <button class="button-link" type="submit">Prepare email</button>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
     </section>
     <section class="card">
       <h2>Design Choices</h2>
@@ -48,5 +70,46 @@
   <footer class="site-footer">
     <p>Abderrachid Elhimeur | Portfolio</p>
   </footer>
+  <script>
+    // Validate each field and connect errors to its input for screen readers.
+    const contactForm = document.getElementById('contact-form');
+    const fields = [
+      { input: document.getElementById('contact-name'), error: document.getElementById('name-error'), message: 'Please enter your name.' },
+      { input: document.getElementById('contact-email'), error: document.getElementById('email-error'), message: 'Please enter a valid email address.' },
+      { input: document.getElementById('contact-message'), error: document.getElementById('message-error'), message: 'Please enter a message.' }
+    ];
+    function checkField(field) {
+      const input = field.input;
+      const valid = input.value.trim() !== '' && (input.type !== 'email' || input.validity.valid);
+      field.error.textContent = valid ? '' : field.message;
+      if (valid) {
+        input.removeAttribute('aria-invalid');
+      } else {
+        input.setAttribute('aria-invalid', 'true');
+      }
+      return valid;
+    }
+    fields.forEach(field => field.input.addEventListener('input', () => {
+      if (field.input.hasAttribute('aria-invalid')) checkField(field);
+    }));
+    contactForm.addEventListener('submit', event => {
+      event.preventDefault();
+      const results = fields.map(checkField);
+      const firstInvalid = results.indexOf(false);
+      const status = document.getElementById('form-status');
+      if (firstInvalid !== -1) {
+        status.textContent = 'Please correct the highlighted fields before continuing.';
+        fields[firstInvalid].input.focus();
+        return;
+      }
+      const name = fields[0].input.value.trim();
+      const email = fields[1].input.value.trim();
+      const message = fields[2].input.value.trim();
+      const subject = encodeURIComponent('Portfolio contact from ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\\nEmail: ' + email + '\\n\\n' + message);
+      status.textContent = 'Opening your email application to send your message.';
+      window.location.href = 'mailto:aelhimeur@my.campus.edu?subject=' + subject + '&body=' + body;
+    });
+  </script>
 </body>
 </html>
