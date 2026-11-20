@@ -20,3 +20,11 @@ the form and added error messages for missing or incorrect information. The form
 
 I used WAVE to identify accessibility issues and made changes to fix them. I also adjusted the colors to improve contrast. 
 I still need to test all three pages again with WAVE and check the final contrast using WebAIM.
+
+
+
+Color Contrast Testing
+
+I used the WebAIM Contrast Checker to test the colors on my website and make sure they meet WCAG AA standards. I checked the text, headings, navigation, and buttons against their background colors and made adjustments where needed.
+
+I also included screenshots of the contrast test results.
