@@ -2,7 +2,7 @@
   --color-blue: #2563eb;
   --color-navy: #172554;
   --color-text: #1f2937;
-  --color-muted: #64748b;
+  --color-muted: #475569;
   --color-background: #f4f7fb;
   --color-white: #ffffff;
   --space-1: 8px;
@@ -30,8 +30,8 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.7;
-  color: white;
-  background: white;
+  color: var(--color-text);
+  background: var(--color-background);
 }
 
 img {
@@ -268,3 +268,53 @@ a:focus-visible {
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
 }
+
+/* Gestalt: proximity groups related projects and form controls. */
+.card-grid article {
+  padding: var(--space-2);
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: var(--color-white);
+}
+.card-grid article h2,
+.card-grid article h3 { margin-top: 0; }
+.card-grid article p { margin-bottom: var(--space-1); }
+
+/* Gestalt: similarity uses the same blue buttons and nav treatments on every page. */
+button.button-link {
+  border: 0;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+button.button-link:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #b45309;
+  outline-offset: 3px;
+}
+fieldset {
+  border: 1px solid #94a3b8;
+  border-radius: 8px;
+  padding: var(--space-2);
+  margin: 0 0 var(--space-2);
+}
+legend { color: var(--color-navy); font-weight: 700; padding: 0 6px; }
+.form-field { margin: 0 0 var(--space-2); }
+.form-field label { display: block; font-weight: 600; margin-bottom: 4px; }
+.form-field input,
+.form-field textarea {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  padding: 10px 12px;
+  border: 1px solid #64748b;
+  border-radius: 6px;
+  background: var(--color-white);
+  color: var(--color-text);
+  font: inherit;
+}
+.form-field [aria-invalid="true"] { border: 2px solid #b91c1c; }
+.form-error { color: #b91c1c; font-size: 0.95rem; margin: 4px 0 0; }
+.form-error:empty, #form-status:empty { display: none; }
+.form-hint { color: var(--color-muted); font-size: 0.95rem; }
