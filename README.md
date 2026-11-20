@@ -25,6 +25,68 @@ I still need to test all three pages again with WAVE and check the final contras
 
 ## Color Contrast Testing
 
-I used the WebAIM Contrast Checker to test the colors on my website and make sure they meet WCAG AA standards. I checked the text, headings, navigation, and buttons against their background colors and made adjustments where needed.
+I used the WebAIM Contrast Checker to test the colors on my website and make sure they meet WCAG AA standards. I checked the text, 
+headings, navigation, and buttons against their background colors and made adjustments where needed.
 
-I also included screenshots of the contrast test results.
+The contrast test results:
+Element
+
+Contrast Ratio
+
+Result
+
+Main body text
+
+13.66:1
+
+Pass
+
+Text inside cards
+
+14.67:1
+
+Pass
+
+Headings
+
+14.69:1
+
+Pass
+
+Navigation text
+
+14.69:1
+
+Pass
+
+Regular links
+
+5.16:1
+
+Pass
+
+Footer text
+
+14.69:1
+
+Pass
+
+Form input text
+
+14.67:1
+
+Pass
+
+Form error messages
+
+6.47:1
+
+Pass
+
+Form help text
+
+7.57:1
+
+Pass
+
+All nine color combinations I tested passed WCAG AA standards. Normal text needs at least a 4.5:1 contrast ratio, and all my results were above that requirement.
