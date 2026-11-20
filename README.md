@@ -39,54 +39,43 @@ Main body text
 
 13.66:1
 
-Pass
 
 Text inside cards
 
 14.67:1
 
-Pass
 
 Headings
 
 14.69:1
 
-Pass
 
 Navigation text
 
 14.69:1
 
-Pass
 
 Regular links
 
 5.16:1
 
-Pass
 
 Footer text
 
 14.69:1
 
-Pass
 
 Form input text
 
 14.67:1
 
-Pass
 
 Form error messages
 
 6.47:1
 
-Pass
-
 Form help text
 
 7.57:1
 
-Pass
-
-All nine color combinations I tested passed WCAG AA standards. Normal text needs at least a 4.5:1 contrast ratio, and all my results were above that requirement.
+All color combinations I tested passed WCAG AA standards. Normal text needs at least a 4.5:1 contrast ratio, and all my results were above that requirement.
