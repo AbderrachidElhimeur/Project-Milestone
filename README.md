@@ -78,6 +78,6 @@ Form help text
 
 All color combinations I tested passed WCAG AA standards. Normal text needs at least a 4.5:1 contrast ratio, and all my results were above that requirement.
 
-##Final testing : 
+## Final testing : 
 
 I ran WAVE on all three pages and checked the color contrast using WebAIM to make sure my website meets WCAG AA standards.
