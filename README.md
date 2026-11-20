@@ -6,6 +6,9 @@ I used WAVE to check my website for accessibility errors. On the Home and About 
 and fixed the text colors to make them easier to read. I also fixed the broken Projects link and the missing form label. 
 The Projects page already had the correct language setting, and I kept the colors consistent across all three pages.
 
+![WAVE Accessibility Errors](error%20on%20Wave%200.png)
+![WAVE Accessibility Errors](error%20on%20Wave%201.png)
+
 2- Visual Design
 
 I used two Gestalt principles: proximity and similarity. I grouped related information together and used the same colors, 
