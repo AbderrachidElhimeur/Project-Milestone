@@ -1,4 +1,4 @@
-Project Milestone 3: Accessible & Designed
+## Project Milestone 3: Accessible & Designed
 
 1- Accessibility
 
@@ -23,7 +23,7 @@ I still need to test all three pages again with WAVE and check the final contras
 
 
 
-Color Contrast Testing
+## Color Contrast Testing
 
 I used the WebAIM Contrast Checker to test the colors on my website and make sure they meet WCAG AA standards. I checked the text, headings, navigation, and buttons against their background colors and made adjustments where needed.
 
